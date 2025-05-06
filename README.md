@@ -1,2 +1,2 @@
-# Programación segura
-Cada clase esta en su archivo .py
+# Apuntes de clases
+Cada clase esta en su archivo .md
