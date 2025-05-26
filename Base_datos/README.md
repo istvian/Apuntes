@@ -1,10 +1,11 @@
+[Volver](../README.md)
 # Clases
 
 ## [5 de mayo 2025](Clase%2005-05-25.md)
 Clase practica pocos apuntes
 
 
-## [12 de mayo 2025](/Clase%2012-05-25.md)
+## [12 de mayo 2025](Clase%2012-05-25.md)
 - SQL Developer
 - Crear tablas
 - Cambiar nombre
@@ -12,10 +13,10 @@ Clase practica pocos apuntes
 - Modificar una tabla
 - PK y FK Olvidada
 
-## [19 de mayo 2025](/Clase%2019-05-25.md)
+## [19 de mayo 2025](Clase%2019-05-25.md)
 - Insertar datos a una tabla
 
-## [26 de mayo 2025](/Clase%2026-05-25.md)
+## [26 de mayo 2025](Clase%2026-05-25.md)
 - Delete
 - Truncate
 - Backups
