@@ -1,6 +1,6 @@
 # Clases
 
-## [5 de mayo 2025](/Clase%2005-05-25.md)
+## [5 de mayo 2025](path%/Clase%2005-05-25.md)
 Clase practica pocos apuntes
 
 
