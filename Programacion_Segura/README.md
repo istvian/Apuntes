@@ -43,3 +43,4 @@
 - Ingresar valores
 - Eliminar valores
 - Actualizar valores
+- Números aleatorios
