@@ -21,3 +21,7 @@ Clase practica pocos apuntes
 - Truncate
 - Backups
 - Update
+
+
+## [02 de junio 2025](Clase%2002-06-25.md)
+- Check
