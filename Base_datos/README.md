@@ -24,4 +24,4 @@ Clase practica pocos apuntes
 
 
 ## [02 de junio 2025](Clase%2002-06-25.md)
-- Check
+- Check (agregar, eliminar, consultar)
