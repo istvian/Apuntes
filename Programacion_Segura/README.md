@@ -44,3 +44,6 @@
 - Eliminar valores
 - Actualizar valores
 - Números aleatorios
+
+## [Clase 03-06-25](<Clase 03-06-25.md>)
+- Manejo de strings
