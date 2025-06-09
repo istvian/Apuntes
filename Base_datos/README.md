@@ -27,3 +27,7 @@ Clase practica pocos apuntes
 - Check (agregar, eliminar, consultar)
 - Comandos TCL
 - Transacciones
+
+## [09 de junio 2025](Clase%2009-06-25.md)
+- Certamen 3
+- SELECT
