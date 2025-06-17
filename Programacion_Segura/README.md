@@ -47,3 +47,18 @@
 
 ## [Clase 03-06-25](<Clase 03-06-25.md>)
 - Manejo de strings
+- len()
+- Concatenar y repetir
+- slice[0:1]
+- count()
+- find() y rfind()
+- split()
+- Modulo math()
+- trunc
+- floor
+- ceil
+- Control de excepciones try, except, finally
+- pass
+
+## [Clase 10-06-25](<Clase 10-06-25.md>)
+- Ejercicios de practica para certamen
