@@ -43,4 +43,4 @@ Clase practica pocos apuntes
 
 ## [23 de junio 2025](Clase%2023-06-25.md)
 - ORDER BY
-- 
+- FUNCIONES GRUPALES (MIN, AVG, MAX, SUM, COUNT,ETC)
