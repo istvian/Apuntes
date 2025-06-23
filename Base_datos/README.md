@@ -31,3 +31,16 @@ Clase practica pocos apuntes
 ## [09 de junio 2025](Clase%2009-06-25.md)
 - Certamen 3
 - SELECT
+
+## [16 de junio 2025](Clase%2016-06-25.md)
+- AND
+- OR
+- DISTINCT
+- LIKE
+- NULL
+- IN
+- NOT
+
+## [23 de junio 2025](Clase%2023-06-25.md)
+- ORDER BY
+- 
