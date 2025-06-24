@@ -62,3 +62,7 @@
 
 ## [Clase 10-06-25](<Clase 10-06-25.md>)
 - Ejercicios de practica para certamen
+
+## [Clase 24-06-25](<Clase 24-06-25.md>)
+- Situaciones de riesgo y seguridad
+- 
