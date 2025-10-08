@@ -123,3 +123,84 @@ class Database:
                 print("No se puede insertar, código ya existe")
         except Exception as err:
             print(err)
+
+    def insertar_venta(self):
+        codR = input_and_validate("Código=")
+        sql1 = "Select codrep from repuestos where codrep=" + repr(codR)
+        try:
+            self.cursor.execute(sql1)
+            if self.cursor.fetchone() != None:
+                numVenta = input_and_validate("Num. Venta=", "int")
+                fechaVenta = input_and_validate("Fecha de Venta (dd/mm/aaaa)=")
+                montoVenta = input_and_validate("Monto de venta=", "int")
+                sql2 = (
+                    "insert into ventas values ("
+                    + repr(numVenta)
+                    + ","
+                    + repr(codR)
+                    + ", str_to_date("
+                    + repr(fechaVenta)
+                    + ",'%d/%m/%Y'),"
+                    + repr(montoVenta)
+                    + ")"
+                )
+                try:
+                    self.cursor.execute(sql2)
+                    self.conexion.commit()
+
+                except Exception as err:
+                    self.conexion.rollback()
+                    print(err)
+            else:
+                print("Ingrese un código de repuesto que exista")
+        except Exception as err:
+            print(err)
+
+    def eliminar(self):
+        codR = input_and_validate("Código=")
+        sql1 = "select * from repuestos where codrep=" + repr(codR)
+        try:
+            self.cursor.execute(sql1)
+            if self.cursor.fetchone() != None:
+                sql2 = "select * from ventas where codrepuesto=" + repr(codR)
+                try:
+                    self.cursor.execute(sql2)
+                    if self.cursor.fetchone() != None:
+                        print("No se puede eliminar, porque está en la tabla Ventas")
+                    else:
+                        sql3 = "delete from repuestos where codrep=" + repr(codR)
+                        try:
+                            self.cursor.execute(sql3)
+                            self.conexion.commit()
+                            print("Repuesto eliminado")
+                        except Exception as err:
+                            self.conexion.rollback()
+                            print(err)
+                except Exception as err:
+                    print("error2")
+                    print(err)
+            else:
+                print("No existe ese código")
+        except Exception as err:
+            print("error 1")
+            print(err)
+
+    def eliminar_venta(self):
+        numVenta = input_and_validate("Código=")
+        sql1 = "select * from ventas where numVenta=" + repr(numVenta)
+        try:
+            self.cursor.execute(sql1)
+            if self.cursor.fetchone() != None:
+                sql2 = "delete from ventas where numVenta =" + repr(numVenta)
+                try:
+                    self.cursor.execute(sql2)
+                    self.conexion.commit()
+                    print("Venta eliminada")
+                except Exception as err:
+                    self.conexion.rollback()
+                    print(err)
+            else:
+                print("No existe ese número de venta")
+        except Exception as err:
+            print("error 1")
+            print(err)

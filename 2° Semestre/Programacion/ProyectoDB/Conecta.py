@@ -12,6 +12,9 @@ while True:
                   \tMostrar todas las ventas(vv)\n\
                   \tMostrar una venta(v)\n\
                   \tInsertar repuesto (i)\n\
+                  \tInsertar venta (iv)\n\
+                  \tEliminar repuesto (d)\n\
+                  \tEliminar venta (dv)\n\
                   \tFin(f)\n\
                   \t=>".lower()
     )
@@ -28,6 +31,12 @@ while True:
         db.venta_uno(codABuscar)
     elif elige == "i":
         db.insertar()
+    elif elige == "d":
+        db.eliminar()
+    elif elige == "dv":
+        db.eliminar_venta()
+    elif elige == "iv":
+        db.insertar_venta()
     elif elige == "f":
         print("Fin")
         db.cerrarDB()
