@@ -29,3 +29,22 @@ class Database:
                 # print(rep)
         except Exception as err:
             print(err)
+
+    def select_uno(self, cod):
+        sql = "select * from repuestos where codrep=" + repr(cod)
+        try:
+            self.cursor.execute(sql)
+            rep = self.cursor.fetchone()
+            if rep != None:
+                print(
+                    f"{'Codigo':10}{'Nombre rep.':20}{'Fecha fabr.':12}\
+                      {'Precio prov.':12}{'Precio ven.':12}{'Peso':12}"
+                )
+                print(
+                    f"{rep[0]:10}{rep[1]:20}{rep[2].strftime('%d/%m/%Y'):12}\
+                        {rep[3]:<12}{rep[4]:<12}{rep[5]:<12}"
+                )
+            else:
+                print("Código no existe")
+        except Exception as err:
+            print(err)
