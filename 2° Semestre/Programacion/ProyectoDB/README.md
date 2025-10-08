@@ -1,11 +1,18 @@
 # Pasos
 
 ## appserv
-- Buscar appserv
-- Ejecutar en terminal
-- Crear Base de datos = "empresa"
-- Crear Tablas y datos
+- Buscar appserv en menu inicio
+- Ejecutar en MySQLCommand Line Client
 
+<img width="685" height="512" alt="image" src="https://github.com/user-attachments/assets/7ef96f8a-7c37-4485-8f76-6b3ed3ae7dd2" />
+
+- Crear Base de datos = "empresa"
+```sql
+create database empresa;
+use empresa;
+```
+
+- Crear Tablas y datos
 ```sql
 create table Repuestos(
 codRep varchar(3) not null primary key,
@@ -38,10 +45,11 @@ insert into ventas values(2503,'r84','2023/9/5',890000);
 
 ```
 
-- Descargar 2 archivos y ejecutar en terminal
+- Descargar 2 archivos
 - [Database.py](<./Database.py>)
 - [Conecta.py](<./Conecta.py>)
 
+- Ejecutar en terminal
   ```bash
   pip install pymysql
   ```
