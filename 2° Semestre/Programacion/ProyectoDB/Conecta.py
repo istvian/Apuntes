@@ -11,3 +11,16 @@ while True:
                   \tFin(f)\n\
                   \t=>".lower()
     )
+    if elige == "u":
+        codABuscar = input("Ingrese código a buscar=")
+        db.select_uno(codABuscar)
+    elif elige == "t":
+        db.select_todos()
+    elif elige == "f":
+        print("Fin")
+        db.cerrarDB()
+        break
+    else:
+        print("Error de opción")
+
+    input("Pulse Enter para continuar...")
