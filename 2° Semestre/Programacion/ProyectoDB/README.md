@@ -39,8 +39,8 @@ insert into ventas values(2503,'r84','2023/9/5',890000);
 ```
 
 - Descargar 2 archivos y ejecutar en terminal
-- [Database.py](</Database.py>)
-- [Conecta.py](</Conecta.py>)
+- [Database.py](<./Database.py>)
+- [Conecta.py](<./Conecta.py>)
 
   ```bash
   pip install pymysql
