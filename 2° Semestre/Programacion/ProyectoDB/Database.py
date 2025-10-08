@@ -1,4 +1,5 @@
 import pymysql
+from Validar import *
 
 
 class Database:
@@ -26,7 +27,6 @@ class Database:
                     f"{rep[0]:10}{rep[1]:20}{rep[2].strftime('%d/%m/%Y'):12}\
                       {rep[3]:<12}{rep[4]:<12}{rep[5]:<12}"
                 )
-                # print(rep)
         except Exception as err:
             print(err)
 
@@ -83,5 +83,43 @@ class Database:
                 )
             else:
                 print("Código no existe")
+        except Exception as err:
+            print(err)
+
+    def insertar(self):
+        codR = input_and_validate("Código=")
+        sql1 = "Select codrep from repuestos where codrep=" + repr(codR)
+        try:
+            self.cursor.execute(sql1)
+            if self.cursor.fetchone() == None:
+                nomR = input_and_validate("Nombre=")
+                fechaF = input_and_validate("Fecha de Fabricación (dd/mm/aaaa)=")
+                precioProv = input_and_validate("Precio de Proveedor=", "int")
+                precioVen = input_and_validate("Precio de Venta=", "int")
+                peso = input_and_validate("Peso(kg)=", "float")
+                sql2 = (
+                    "insert into repuestos values ("
+                    + repr(codR)
+                    + ","
+                    + repr(nomR)
+                    + ", str_to_date("
+                    + repr(fechaF)
+                    + ",'%d/%m/%Y'),"
+                    + repr(precioProv)
+                    + ","
+                    + repr(precioVen)
+                    + ","
+                    + repr(peso)
+                    + ")"
+                )
+                try:
+                    self.cursor.execute(sql2)
+                    self.conexion.commit()
+
+                except Exception as err:
+                    self.conexion.rollback()
+                    print(err)
+            else:
+                print("No se puede insertar, código ya existe")
         except Exception as err:
             print(err)
