@@ -13,4 +13,26 @@
 - Indices
 - Sinonimos
 
+## [01 de Septiembre](Clase%2001-09-25.md)
+- Indices
+- Sinonimos
+
+## [15 de Septiembre](Clase%2015-09-25.md)
+- Consultas avanzadas con más de una tabla
+
+
+## [29 de Septiembre](Clase%2029-09-25.md)
+- Funciones grupales
+- Having
+
+
+## [06 de Octubre](Clase%2006-10-25.md)
+- Join y varias tablas
+
+## [13 de Octubre](Clase%2013-10-25.md)
+- Subconsultas
+
+
+
+
 
