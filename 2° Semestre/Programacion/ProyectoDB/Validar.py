@@ -1,3 +1,6 @@
+from datetime import *
+
+
 def input_and_validate(text, type="text", lower=False):
     data = ""
     try:
@@ -9,6 +12,16 @@ def input_and_validate(text, type="text", lower=False):
             data = float(input(text))
             while data == "":
                 data = float(input("Ingrese un valor, " + text))
+        elif type == "date":
+            while True:
+                nueva = input(text)
+                try:
+                    fecha = datetime.strptime(nueva, "%d/%m/%Y")  # Convierte a fecha
+                    break
+                except ValueError:
+                    print("Error de fecha")
+            data = nueva
+
         else:
             data = input(text)
             while data == "":

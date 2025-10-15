@@ -9,11 +9,13 @@ while True:
         "\nElija una opción:\n\
                   \tMostrar un repuesto(u)\n\
                   \tMostrar todos los repuestos(t)\n\
-                  \tMostrar todas las ventas(vv)\n\
                   \tMostrar una venta(v)\n\
+                  \tMostrar todas las ventas(vv)\n\
                   \tInsertar repuesto (i)\n\
-                  \tInsertar venta (iv)\n\
+                  \tModificar repuesto (m)\n\
                   \tEliminar repuesto (d)\n\
+                  \tInsertar venta (iv)\n\
+                  \tModificar venta (mv)\n\
                   \tEliminar venta (dv)\n\
                   \tFin(f)\n\
                   \t=>".lower()
@@ -31,10 +33,14 @@ while True:
         db.venta_uno(codABuscar)
     elif elige == "i":
         db.insertar()
+    elif elige == "m":
+        db.modificar()
     elif elige == "d":
         db.eliminar()
     elif elige == "dv":
         db.eliminar_venta()
+    elif elige == "mv":
+        db.modificar_venta()
     elif elige == "iv":
         db.insertar_venta()
     elif elige == "f":
