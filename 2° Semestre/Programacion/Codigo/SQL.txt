@@ -1,0 +1,25 @@
+create database conciertos;
+use conciertos;
+
+create table conciertos(
+codConcierto int(3)not null primary key,
+precio int(6),
+fecha date,
+ciudad varchar(15)
+)engine=innodb;
+
+create table Asistentes(
+idAsistente int(5) not null primary key,
+email varchar(30),
+edad int(2),
+codConcierto int(3) not null references conciertos(codConcierto)
+)engine=innodb;
+
+# AGREGAR TABLA USUARIOS
+CREATE TABLE USUARIOS(
+NOMBRE VARCHAR(20) PRIMARY KEY,
+PASSWORD VARCHAR(32)
+)ENGINE=INNODB;
+
+pip install tabulate
+pip install pwinput
