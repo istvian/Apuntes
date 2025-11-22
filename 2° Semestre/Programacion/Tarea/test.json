@@ -1,0 +1,42 @@
+[
+    {
+        "CODETAPA": "1",
+        "NOMBREJUGADOR": "JUAN1",
+        "PUNTAJE": "10"
+    },
+    {
+        "CODETAPA": "2",
+        "NOMBREJUGADOR": "JUAN2",
+        "PUNTAJE": "20"
+    },
+    {
+        "CODETAPA": "3",
+        "NOMBREJUGADOR": "JUAN3",
+        "PUNTAJE": "30"
+    },
+    {
+        "CODETAPA": "4",
+        "NOMBREJUGADOR": "JUAN4",
+        "PUNTAJE": "40"
+    },
+    {
+        "CODETAPA": "5",
+        "NOMBREJUGADOR": "JUAN5",
+        "PUNTAJE": "50"
+    },
+    {
+        "CODETAPA": "6",
+        "NOMBREJUGADOR": "JUAN6",
+        "PUNTAJE": "60"
+    },
+    {
+        "CODETAPA": "7",
+        "NOMBREJUGADOR": "JUAN7",
+        "PUNTAJE": "70"
+    },
+    {
+        "CODETAPA": "8",
+        "NOMBREJUGADOR": "JUAN8",
+        "PUNTAJE": "80"
+    }
+]
